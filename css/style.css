@@ -1,0 +1,220 @@
+/* body design */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* Navbar */
+
+nav {
+    background-color:  rgb(59, 58, 58); 
+    color: white;
+    display: grid;
+    grid-template-columns: 70% 25%;
+}
+
+/* Navbar right side algorithms speed, array size and generate new array  */
+
+nav .array-inputs{
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns:35% 65%;
+    place-content: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+nav .array-inputs p{
+    font-weight:500;
+}
+nav .array-inputs #arr_size{
+    margin: 10px;
+    place-content: center;
+}
+nav .array-inputs #arr_size:hover{
+    cursor: pointer;
+}
+nav .array-inputs #arr_speed{
+    margin: 10px;
+    place-content: center;
+}
+nav .array-inputs #arr_speed:hover{
+    cursor: pointer;
+}
+nav .array-inputs #arr_generate{
+    margin-top: 4px;
+    padding: 4px;
+    grid-column: 1/span 2;
+    place-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+nav .array-inputs #arr_generate:hover{
+    cursor: pointer;
+}
+
+/* Navbar left side heading and algorithms buttons */
+
+.nav_left{
+    display: flex;
+    flex-direction: column;
+}
+.page_heading
+{
+    color: rgb(142, 194, 63);
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+.algos_btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.algo_btn{
+    background-color: transparent;
+    color: rgb(246, 1, 1);
+    margin: 8px 10px;
+    padding: 5px 18px ;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+    
+}
+nav .algo_btn:hover
+{
+    background-color: white;
+    cursor: pointer;
+}
+nav .algos_btn .butt_locked{
+    background-color: transparent;
+    color: rgb(246, 1, 1);
+    margin: 8px 10px;
+    padding: 5px 18px ;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+}
+nav .algos_btn .butt_locked:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+nav .algos_btn .butt_selected{
+    background-color: white;
+    color: rgb(246, 1, 1);
+    margin: 8px 10px;
+    padding: 5px 18px ;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+}
+nav .algos_btn .butt_selected:hover{
+    background-color: white;
+}
+nav .algos_btn .butt_unselected{
+    background-color: transparent;
+    color: rgb(246, 1, 1);
+    margin: 8px 10px;
+    padding: 5px 18px ;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+}
+
+
+
+/* array container and left side information container */
+
+section{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 76vh;
+}
+section .left_cont{
+    background-color:  rgb(59, 58, 58); 
+    border-right:2px solid black;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+section .left_cont h{
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    background-color:transparent;
+    color: rgb(246, 1, 1);
+    color: rgb(142, 194, 63);
+    justify-content: center;
+    font-size: 19px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration-color:white ;
+}
+section .left_cont .algo_info2{
+    display: flex;
+    flex-direction: column;
+}
+section .left_cont a{
+    background-color: white;
+    /* background-color: transparent; */
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.algo_info3{
+    display: flex;
+    margin: 3px 25px;
+    border: 2px solid black;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(246, 1, 1);
+}
+.stop_algo{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    /* margin-top: 10px; */
+    margin: 15px 15px;
+    /* margin-bottom: 15px; */
+}
+.stop_algo button{
+    margin-top: 30px;
+    font-size: 23px;
+    background-color: rgb(246, 1, 1);d;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(246, 1, 1);;
+    background-color: transparent;
+     font-family: 'Audiowide', cursive;
+     font-weight: 500;
+}
+/* right side array container  */
+
+section #array_container{
+    display: flex;
+    width: 99%;
+    height: 77vh;
+    align-items: flex-end;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  rgb(59, 58, 58);
+    color:rgb(59, 58, 58) ;
+    text-align: center;
+}
